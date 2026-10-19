@@ -21,7 +21,7 @@ class SoundEffectsService {
     this.isMuted = muted;
   }
 
-  // Soft sparkle / magical chime
+  // Soft sparkle / magical chime (reduced by ~33% for gentle click & interactive audio)
   public playSparkle() {
     if (this.isMuted) return;
     try {
@@ -39,7 +39,7 @@ class SoundEffectsService {
         osc.frequency.setValueAtTime(freq, now + idx * 0.08);
 
         gain.gain.setValueAtTime(0, now + idx * 0.08);
-        gain.gain.linearRampToValueAtTime(0.12, now + idx * 0.08 + 0.02);
+        gain.gain.linearRampToValueAtTime(0.08, now + idx * 0.08 + 0.02);
         gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.6);
 
         osc.connect(gain);
@@ -53,7 +53,7 @@ class SoundEffectsService {
     }
   }
 
-  // Gift box open sound: swoosh + happy chime
+  // Gift box / confirm button open sound: swoosh + happy chime (reduced by ~33%)
   public playGiftOpen() {
     if (this.isMuted) return;
     try {
@@ -69,7 +69,7 @@ class SoundEffectsService {
       osc.frequency.setValueAtTime(150, now);
       osc.frequency.exponentialRampToValueAtTime(450, now + 0.15);
 
-      gain.gain.setValueAtTime(0.15, now);
+      gain.gain.setValueAtTime(0.10, now);
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
 
       osc.connect(gain);
