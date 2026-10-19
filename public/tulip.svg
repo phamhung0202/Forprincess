@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="lilyFavPetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fdf2f8" />
+      <stop offset="75%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="lilyFavSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f9" />
+      <stop offset="50%" stop-color="#fbcfe8" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+    <linearGradient id="lilyFavStem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Stem -->
+  <path d="M50 55 Q48 75 50 95" stroke="url(#lilyFavStem)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Leaf -->
+  <path d="M49 80 Q32 72 38 60 Q45 70 49 75" fill="url(#lilyFavStem)"/>
+
+  <!-- Back Sepals/Petals -->
+  <path d="M50 55 C44 40 40 22 50 8 C60 22 56 40 50 55 Z" fill="url(#lilyFavSide)" opacity="0.95"/>
+  <path d="M50 55 C35 48 18 36 12 25 C24 23 41 38 50 55 Z" fill="url(#lilyFavSide)" opacity="0.9"/>
+  <path d="M50 55 C65 48 82 36 88 25 C76 23 59 38 50 55 Z" fill="url(#lilyFavSide)" opacity="0.9"/>
+
+  <!-- Front 3 Flared Lily Petals -->
+  <path d="M50 55 C38 60 25 66 18 72 C26 75 41 68 50 55 Z" fill="url(#lilyFavPetal)"/>
+  <path d="M50 55 C62 60 75 66 82 72 C74 75 59 68 50 55 Z" fill="url(#lilyFavPetal)"/>
+  <path d="M50 55 C42 48 38 30 50 18 C62 30 58 48 50 55 Z" fill="url(#lilyFavPetal)"/>
+
+  <!-- Inner green throat -->
+  <circle cx="50" cy="54" r="5" fill="#bef264" opacity="0.75"/>
+
+  <!-- Stamens with Golden Anthers -->
+  <path d="M50 54 Q38 45 35 34" stroke="#fef08a" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="35" cy="33" rx="2.5" ry="1.2" transform="rotate(-30 35 33)" fill="#d97706"/>
+
+  <path d="M50 54 Q44 38 43 28" stroke="#fef08a" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="43" cy="27" rx="2.5" ry="1.2" transform="rotate(-15 43 27)" fill="#d97706"/>
+
+  <path d="M50 54 Q50 36 50 24" stroke="#86efac" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="50" cy="23" r="1.8" fill="#4ade80"/>
+
+  <path d="M50 54 Q56 38 57 28" stroke="#fef08a" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="57" cy="27" rx="2.5" ry="1.2" transform="rotate(15 57 27)" fill="#d97706"/>
+
+  <path d="M50 54 Q62 45 65 34" stroke="#fef08a" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="65" cy="33" rx="2.5" ry="1.2" transform="rotate(30 65 33)" fill="#d97706"/>
+</svg>
